@@ -12,14 +12,14 @@ var _outputRoot = __dirname+"/src/";
 
 
 var languages = {
-	"en": null
+	"en": require(_watchPath+"static/js/i18n/en.json")
 	, "cn": require(_watchPath+"static/js/i18n/cn.json")
 };
 
 var entry = {
     "index": _watchPath+"static/js/index.js"
-    , "list": _watchPath+"static/js/list.js"
-    , "view": _watchPath+"static/js/view.js"
+    //, "list": _watchPath+"static/js/list.js"
+    //, "view": _watchPath+"static/js/view.js"
 };
 
 var chunks = Object.keys(entry);
